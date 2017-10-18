@@ -53,8 +53,9 @@ public class SplashScreen {
                                     activity.runOnUiThread(new Runnable() {
                                         @Override
                                         public void run() {
+                                            mSplashDialog.show();
                                             // Hide the native splash screen
-                                            activity.getWindow().getDecorView().setBackgroundColor(Color.WHITE);
+                                            // activity.getWindow().getDecorView().setBackgroundColor(Color.WHITE);
                                         }
                                     });
                                 }
